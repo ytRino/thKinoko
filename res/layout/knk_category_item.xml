@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/knk_dialog_cat_check"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:paddingTop="@dimen/knk_category_item_padding"
+    android:paddingBottom="@dimen/knk_category_item_padding"
+    android:paddingRight="@dimen/knk_category_item_padding"
+    android:paddingLeft="@dimen/knk_category_item_padding_left"
+    android:background="@android:drawable/list_selector_background"
+    />
+
+<!-- TextView
+    android:id="@+id/knk_dialog_cat_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    /-->

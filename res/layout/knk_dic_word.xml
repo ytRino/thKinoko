@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/word_root"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <ImageView
+    android:id="@+id/word_charactor"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignBottom="@+id/word_key"
+    android:scaleType="centerCrop"
+    />
+  <ImageView
+    android:id="@+id/word_category"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    />
+  <TextView
+    android:id="@+id/word_value"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/word_category"
+    android:gravity="center_vertical"
+    style="@style/KnkDicWordText.Value"
+    android:textSize="@dimen/text_medium"
+    android:textStyle="bold"
+    />
+  <TextView
+    android:id="@+id/word_key"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/word_category"
+    android:layout_below="@id/word_value"
+    style="@style/KnkDicWordText"
+    android:textSize="@dimen/text_small"
+    android:textColor="@color/word_key"
+    />
+</RelativeLayout>

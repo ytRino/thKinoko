@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="char_vals">
+    <item>博麗 霊夢</item> <!-- @ -->
+    <item>霧雨 魔理沙</item>
+    <item>ルーミア</item>
+    <item>チルノ</item>
+    <item>紅 美鈴</item>
+    <item>パチュリー・ノーレッジ</item>
+    <item>十六夜 咲夜</item>
+    <item>レミリア・スカーレット</item>
+    <item>フランドール・スカーレット</item>
+    <item>レティ・ホワイトロック</item>
+    <item>橙</item>
+    <item>アリス・マーガトロイド</item>
+    <item>リリーホワイト</item>
+    <item>ルナサ・プリズムリバー</item>
+    <item>メルラン・プリズムリバー</item>
+    <item>リリカ・プリズムリバー</item>
+    <item>魂魄 妖夢</item>
+    <item>西行寺 幽々子</item>
+    <item>八雲 藍</item>
+    <item>八雲 紫</item>
+    <item>伊吹 萃香</item>
+    <item>リグル・ナイトバグ</item>
+    <item>ミスティア・ローレライ</item>
+    <item>上白沢 慧音</item>
+    <item>因幡 てゐ</item>
+    <item>鈴仙・優曇華院・イナバ</item>
+    <item>八意 永琳</item> <!-- @ -->
+    <item>蓬莱山 輝夜</item>
+    <item>藤原 妹紅</item>
+    <item>射命丸 文</item>
+    <item>メディスン・メランコリー</item> <!-- @ -->
+    <item>風見 幽香</item>
+    <item>小野塚 小町</item>
+    <item>四季映姫・ヤマザナドゥ</item>
+    <item>秋 静葉</item>
+    <item>秋 穣子</item>
+    <item>鍵山 雛</item>
+    <item>河城 にとり</item>
+    <item>犬走 椛</item>
+    <item>東風谷 早苗</item> <!-- @ -->
+    <item>八坂 神奈子</item>
+    <item>洩矢 諏訪子</item> <!-- @ -->
+    <item>永江 衣玖</item> <!-- @ -->
+    <item>比那名居 天子</item> <!-- @ -->
+    <item>キスメ</item> <!-- @ -->
+    <item>黒谷 ヤマメ</item> <!-- @ -->
+    <item>水橋 パルスィ</item>
+    <item>星熊 勇儀</item> <!-- @ -->
+    <item>古明地 さとり</item>
+    <item>火焔猫 燐</item> <!-- @ -->
+    <item>霊烏路 空</item>
+    <item>古明地 こいし</item>
+    <item>ナズーリン</item> <!-- @ -->
+    <item>多々良 小傘</item> <!-- @ -->
+    <item>雲居 一輪&amp;雲山</item>
+    <item>村紗 水蜜</item>
+    <item>寅丸 星</item>
+    <item>聖 白蓮</item> <!-- @ -->
+    <item>封獣 ぬえ</item>
+    <item>姫海棠 はたて</item>
+    <item>サニーミルク</item> <!-- @ -->
+    <item>ルナチャイルド</item> <!-- @ -->
+    <item>スターサファイア</item> <!-- @ -->
+    <item>大妖精</item>
+    <item>小悪魔</item>
+    <item>稗田 阿求</item>
+    <item>森近 霖之助</item> <!-- @ -->
+    <item>大ナマズ</item> <!-- @ -->
+    <!-- v0.2.1.0 -->
+    <item>幽谷 響子</item>
+    <item>宮古 芳香</item>
+    <!-- v0.2.2.0 -->
+    <item>霍 青娥</item>
+    <item>蘇我 屠自古</item>
+    <item>物部 布都</item>
+    <item>豊聡耳 神子</item>
+    <item>二ッ岩 マミゾウ</item>
+</string-array>
+</resources>

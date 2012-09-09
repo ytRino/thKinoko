@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="KnkDicWordText">
+    <item name="android:layout_marginLeft">7sp</item>
+    <item name="android:paddingBottom">5sp</item>
+    <item name="android:paddingRight">5sp</item>
+</style>
+<style name="KnkDicWordText.Value">
+    <item name="android:paddingTop">5sp</item>
+</style>
+</resources>

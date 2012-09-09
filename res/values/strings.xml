@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">幻想郷きのこ畑</string>
+    <string name="app_description">東方関連ワードを手軽に入力するマッシュルーム</string>
+
+    <string name="nowloading">少女準備中...</string>
+
+    <string name="menu_setting">設定</string>
+    <string name="menu_help">ヘルプ</string>
+    <string name="menu_about">about</string>
+    <string name="cmenu_char">キャラクター<!-- 6test --></string>
+
+    <string name="keyword_hint">検索文字を入力</string>
+    <string name="search_key">読み</string>
+    <string name="search_val">書き</string>
+    <string name="search_ref">連想</string>
+
+    <string name="pref_addition">おまけ</string>
+    <string name="pref_use_img_key">use_img</string>
+    <string name="pref_use_img_title">背景画像を使う</string>
+    <string name="pref_use_img_summary">チェックすると項目の背景に個別の画像を使います。</string>
+
+    <string name="cat_chooser_title">カテゴリ</string>
+
+</resources>

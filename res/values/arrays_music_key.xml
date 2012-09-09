@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="music_keys">
+    <item>あかよりあかいゆめ</item>
+    <item>ほおずきみたいにあかいたましい</item>
+    <item>ようまやこう</item>
+    <item>るーねいとえるふ</item>
+    <item>おてんばこいむすめ</item>
+    <item>しゃんはいこうちゃかん</item>
+    <item>めいじじゅうななねんのしゃんはいありす;めいじ17ねんの;めいじ１７ねんの</item>
+    <item>ヴわるまほうとしょかん;ぶわる</item>
+    <item>らくとがーる しょうじょみっしつ</item>
+    <item>めいどとちのかいちゅうどけい</item>
+    <item>つきどけい るなだいある</item>
+    <item>つぇぺしゅのおさなきまつえい</item>
+    <item>なきおうじょのためのせぷてっと</item>
+    <item>まほうしょうじょたちのひゃくねんさい</item>
+    <item>U.N.おーえんはかのじょなのか;ゆななんしぃ</item>
+    <item>あかよりはかないえいえん</item>
+    <item>こうろう Eastern Dream...</item>
+    <item>ようようむ Snow or Cherry Petal</item>
+    <item>むかうのきょう Deep Mountain</item>
+    <item>くりすたらいずしるばー</item>
+    <item>とおのげんそうものがたり</item>
+    <item>てぃあおいえつぉん withered leaf</item>
+    <item>ぶくれしゅてぃのにんぎょうし</item>
+    <item>にんぎょうさいばん ひとのかたちもてあそびししょうじょ</item>
+    <item>てんくうのはなのみやこ</item>
+    <item>ゆうれいがくだん Phantom Ensemble</item>
+    <item>とうほうようようむ Ancient Temple</item>
+    <item>ひろありけちょうをいること Till When;こうゆうしゃかいちょうじ</item>
+    <item>あるてぃめっととぅるーす</item><!-- ゆうがにさかせ、すみぞめの をどう処理するか? -->
+    <item>ゆうがにさかせすみぞめのさくら Border of Life;ぼーだーおぶらいふ</item>
+    <item>ぼーだーおぶらいふ</item>
+    <item>ようようばっこ</item>
+    <item>しょうじょげんそう Necro-Fantasy;ねくろふぁんたじー</item>
+    <item>ようようばっこ Who done it!</item>
+    <item>ねくろふぁんたじあ</item>
+    <item>はるかぜのゆめ;しゅんぷうのゆめ</item>
+    <item>さくらさくら Japanize Dream...</item>
+    <item>Demistify Feast</item>
+    <item>よるがおりてくる Evening Star</item>
+    <item>おとぎのくにのおにがしま Missing Power</item>
+    <item>えいやしょう Eastern Night.</item>
+    <item>げんしのよる Gohstly Eyes</item>
+    <item>しゅんしゅんしゅうげつ Mooned Insect</item>
+    <item>よすずめのうたごえ Night Bird</item>
+    <item>もううたしかきこえない</item>
+    <item>なつかしきとうほうのち</item><!-- v0.2.2 -->
+    <item>ぷれいんえいじあ</item>
+    <item>えいやのむくい Imperishable Night.</item>
+    <item>しょうじょきそうきょく Dream Battle</item>
+    <item>こいいろますたーすぱーく</item>
+    <item>しんでれらけーじ Kagome-Kagome;かごめ</item>
+    <item>きょうきのひとみ Invisible Full Moon</item>
+    <item>ヴぉやーじゅ1969;ぼやーじゅ1969;ヴぉやーじゅ１９６９;ぼやーじゅ１９６９</item>
+    <item>せんねんげんそうきょう History of the Moon</item>
+    <item>たけとりひしょう Lunatic Princess</item>
+    <item>ヴぉやーじゅ1970;ぼやーじゅ1970;ヴぉやーじゅ１９７０;ぼやーじゅ１９７０</item>
+    <item>えくすてんどあっしゅ ほうらいじん</item>
+    <item>つきまでとどけふしのけむり</item>
+    <item>つきみそう</item>
+    <item>Eternal Dream ゆうげんのかえで</item>
+    <item>とうほうようかいこまち</item>
+    <item>かえいづか Higan Retour</item>
+    <item>はるいろこみち Colorful Path</item>
+    <item>おりえんたるだーくふらいと</item>
+    <item>ふらわりんぐないと</item>
+    <item>おてんばこいむすめのぼうけん</item>
+    <item>もううたしかきこえない Flower Mix</item>
+    <item>おうささまのしろいはた;もといばん;もといはた</item>
+    <item>風神少女 Short Version</item>
+    <item>ぽいずんぼでぃ Forsaken Doll</item>
+    <item>こんじゃくげんそうきょう Flower Land</item>
+    <item>ひがんきこう Riverside View</item>
+    <item>ろくじゅうねんめのとうほうさいばん Fate of Sixty Years;60ねんめの;６０ねんめの</item>
+    <item>はなのうつるつか</item>
+    <item>しがんのつか</item>
+    <item>はなはげんそうのままに</item>
+    <item>たましいのはな Another Dream...</item>
+    <item>てんぐのてちょう Mysterious Note</item>
+    <item>かぜのじゅんかん Wind Tour</item>
+    <item>てんぐがみている Black Eyes</item>
+    <item>ひがしのくにのねむらないよる</item>
+    <item>れとろすぺくてぃぶきょうと</item>
+    <item>ふうじんしょうじょ</item>
+    <item>ふういんされしかみがみ</item>
+    <item>ひとこいしかみさま Romantic Fall</item>
+    <item>いなだひめさまにしかられるから</item>
+    <item>やくがみさまのとおりみち Dark Road</item>
+    <item>うんめいのだーくさいど</item>
+    <item>かみがみがこいしたげんそうきょう</item>
+    <item>あくたがわりゅうのすけのかっぱ Candid Friend</item>
+    <item>ふぉーるおぶふぉーる あきめくたき</item>
+    <item>ようかいのやま Mysterious Mountain</item>
+    <item>しょうじょがみたにほんのげんふうけい</item>
+    <item>しんこうははかなきにんげんのために</item>
+    <item>おんばしらのはかば Grave of Being</item>
+    <item>かみさびたこせんじょう Suwa Foughten Field</item>
+    <item>あしたはれのひけのきのう</item>
+    <item>ねいてぃぶふぇいす</item>
+    <item>ふもとのじんじゃ</item>
+    <item>かみはめぐみのあめをふらす Sylphid Dream</item>
+    <item>ぷれいやーずすこあ</item>
+    <item>くろいうみにあかく Legendary Fish</item>
+    <item>うちょうてんぺん Wonderful Heaven</item>
+    <item>おさなごこちのうちょうてん</item>
+    <item>ちれいたちのきしょう</item>
+    <item>くらやみのふうけつ;くらやみのかざあな</item>
+    <item>ふうじられたようかい Lost Place</item>
+    <item>わたるもののとだえたはし</item>
+    <item>りょくがんのじぇらしー,みどりめのじぇらしー</item>
+    <item>きゅうじごくかいどうをいく</item>
+    <item>はなのさかづきおおえやま</item>
+    <item>はーとふぇるとふぁんしー</item>
+    <item>しょうじょさとり 3rd eye</item>
+    <item>はいごくらららばい</item>
+    <item>したいりょこう Be of good cheer!</item>
+    <item>ごうかまんとる</item>
+    <item>れいちのたいようしんこう Nuclear Fusion</item>
+    <item>らすとりもーと</item>
+    <item>はるとまんのようかいしょうじょ</item>
+    <item>ちれいたちのきたく</item>
+    <item>えねるぎーれいめい Future Dream...</item>
+    <item>あおぞらのかげ</item>
+    <item>はるのみなとに</item>
+    <item>ちいさなちいさなけんしょう</item>
+    <item>とざせしくものかよいじ</item>
+    <item>まんねんおきがさにごちゅういを</item>
+    <item>すかいるーいん</item>
+    <item>じだいおやじとはいからしょうじょ</item>
+    <item>ゆうれいきゃくせんのじくうをこえたたび</item>
+    <item>きゃぷてんむらさ</item>
+    <item>まかいちほうとしえそてりあ</item>
+    <item>とらがらのびしゃもんてん</item>
+    <item>ほっかいのひ</item>
+    <item>かんじょうのまてんろう Cosmic Mind</item>
+    <item>よぞらのゆーふぉーろまんす</item>
+    <item>へいあんのえいりあん</item>
+    <item>ようかいでら</item>
+    <item>そらのかえりみち Sky Dream</item>
+    <item>あんのうんX Unfound Adventure</item>
+    <item>そらにうかぶぶったいX</item>
+    <item>にゅーすはうんど</item>
+    <item>あなたのまちのかいじけん</item>
+    <item>ようかいもだんころにー</item>
+    <item>ねめしすのようさい</item>
+    <item>むげんのかね Infinite Nightmare;むけんのかね</item>
+    <item>はるのひょうせい</item>
+    <item>かわいいだいせんそうのりふれーん</item>
+    <item>いたずらにいのちをかけて</item>
+    <item>ねんじゅうむちゅうのこうきしん</item>
+    <item>まよなかのふぇありーだんす</item>
+    <item>ようかいだいせんそう Fairy Wars;Faily Wars</item>
+    <item>るーずれいん</item>
+    <item>めいがすないと</item>
+    <item>はるのひょうせい せい</item>
+    <item>ぷれいやーずすこあ</item>
+    <!-- v0.2.1.0 -->
+    <item>よくぶかきれいこん</item>
+    <item>しれいのよざくら;しりょうのよざくら</item>
+    <item>ごーすとりーど</item>
+    <item>ようかいでらへようこそ</item>
+    <item>もんぜんのようかいこむすめ</item>
+    <item>すてきなはかばでくらしましょ</item>
+    <item>りじっどぱらだいす</item>
+    <!-- v0.2.2.0 -->
+    <item>でざいあどらいぶ</item><!-- v0.2.2.1 -->
+    <item>ふるきゆあんしぇん</item>
+    <item>ゆめどのだいしびょう</item>
+    <item>おおみわしんわでん</item>
+    <item>ちいさなよくぼうのほしぞら</item>
+    <item>しょうとくでんせつ　～ True Administrator</item>
+    <item>ようかいうらさんどう</item>
+    <item>さどのふたついわ</item>
+    <item>じんじゃのあたらしいかぜ</item>
+    <item>でざいあどりーむ</item>
+</string-array>
+</resources>

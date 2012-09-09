@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="music_vals">
+    <item>赤より紅い夢</item>
+    <item>ほおずきみたいに紅い魂</item>
+    <item>妖魔夜行</item>
+    <item>ルーネイトエルフ</item>
+    <item>おてんば恋娘</item>
+    <item>上海紅茶館　～ Chinese Tea</item>
+    <item>明治十七年の上海アリス</item>
+    <item>ヴワル魔法図書館</item>
+    <item>ラクトガール　～ 少女密室</item>
+    <item>メイドと血の懐中時計</item>
+    <item>月時計　～ ルナ・ダイアル</item>
+    <item>ツェペシュの幼き末裔</item>
+    <item>亡き王女の為のセプテット</item>
+    <item>魔法少女達の百年祭</item>
+    <item>U.N.オーエンは彼女なのか?</item>
+    <item>紅より儚い永遠</item>
+    <item>紅楼　～ Eastern Dream...</item>
+    <item>妖々夢　～ Snow or Cherry Petal</item>
+    <item>無何有の郷　～ Deep Mountain</item>
+    <item>クリスタライズシルバー</item>
+    <item>遠野幻想物語</item>
+    <item>ティアオイエツォン(withered leaf)</item>
+    <item>ブクレシュティの人形師</item>
+    <item>人形裁判　～ 人の形弄びし少女</item>
+    <item>天空の花の都</item>
+    <item>幽霊楽団　～ Phantom Ensemble</item>
+    <item>東方妖々夢　～ Ancient Temple</item>
+    <item>広有射怪鳥事　～ Till When?</item>
+    <item>アルティメットトゥルース</item>
+    <item>幽雅に咲かせ、墨染の桜　～ Border of Life</item>
+    <item>ボーダーオブライフ</item>
+    <item>妖々跋扈</item>
+    <item>少女幻葬　～ Necro-Fantasy</item>
+    <item>妖々跋扈　～ Who done it!</item>
+    <item>ネクロファンタジア</item>
+    <item>春風の夢</item>
+    <item>さくらさくら　～ Japanize Dream...</item>
+    <item>Demystify Feast</item>
+    <item>夜が降りてくる　～ Evening Star</item>
+    <item>御伽の国の鬼が島　～ Missing Power</item>
+    <item>永夜抄　～ Eastern Night.</item>
+    <item>幻視の夜　～ Gohstly Eyes</item>
+    <item>蠢々秋月　～ Mooned Insect</item>
+    <item>夜雀の歌声　～ Night Bird</item>
+    <item>もう歌しか聞こえない</item>
+    <item>懐かしき東方の血</item><!-- v0.2.2 -->
+    <item>プレインエイジア</item>
+    <item>永夜の報い　～ Imperishable Night.</item>
+    <item>少女綺想曲　～ Dream Battle</item>
+    <item>恋色マスタースパーク</item>
+    <item>シンデレラケージ　～ Kagome-Kagome</item>
+    <item>狂気の瞳　～ Invisible Full Moon</item>
+    <item>ヴォヤージュ1969</item>
+    <item>千年幻想郷　～ History of the Moon</item>
+    <item>竹取飛翔　～ Lunatic Princess</item>
+    <item>ヴォヤージュ1970</item>
+    <item>エクステンドアッシュ　～ 蓬莱人</item>
+    <item>月まで届け、不死の煙</item>
+    <item>月見草</item>
+    <item>Eternal Dream　～ 幽玄の槭樹</item>
+    <item>東方妖怪小町</item>
+    <item>花映塚　～ Higan Retour</item>
+    <item>春色小径　～ Colorful Path</item>
+    <item>オリエンタルダークフライト</item>
+    <item>フラワリングナイト</item>
+    <item>おてんば恋娘の冒険</item>
+    <item>もう歌しか聞こえない　～ Flower Mix</item>
+    <item>お宇佐さまの素い幡</item>
+    <item>風神少女 (Short Version)</item>
+    <item>ポイズンボディ　～ Forsaken Doll</item>
+    <item>今昔幻想郷　～ Flower Land</item>
+    <item>彼岸帰航　～ Riverside View</item>
+    <item>六十年目の東方裁判　～ Fate of Sixty Years</item>
+    <item>花の映る塚</item>
+    <item>此岸の塚</item>
+    <item>花は幻想のままに</item>
+    <item>魂の花　～ Another Dream...</item>
+    <item>天狗の手帖　～ Mysteruous Note</item>
+    <item>風の循環　～ Wind Tour</item>
+    <item>天狗が見ている　～ Black Eyes</item>
+    <item>東の国の眠らない夜</item>
+    <item>レトロスペクティブ京都</item>
+    <item>風神少女</item>
+    <item>封印されし神々</item>
+    <item>人恋し神様　～ Romantic Fall</item>
+    <item>稲田姫様に叱られるから</item>
+    <item>厄神様の通り道　～ Dark Road</item>
+    <item>運命のダークサイド</item>
+    <item>神々が恋した幻想郷</item>
+    <item>芥川龍之介の河童　～ Candid Friend</item>
+    <item>フォールオブフォール　～ 秋めく滝</item>
+    <item>妖怪の山　～ Mysterious Mountain</item>
+    <item>少女が見た日本の原風景</item>
+    <item>信仰は儚き人間の為に</item>
+    <item>御柱の墓場　～ Grave of Being</item>
+    <item>神さびた古戦場　～ Suwa Foughten Field</item>
+    <item>明日ハレの日、ケの昨日</item>
+    <item>ネイティブフェイス</item>
+    <item>麓の神社</item>
+    <item>神は恵みの雨を降らす　～ Sylphid Dream</item>
+    <item>プレイヤーズスコア</item>
+    <item>黒い海に紅く　～ Legendary Fish</item>
+    <item>有頂天変　～ Wonderful Heaven</item>
+    <item>幼心地の有頂天</item>
+    <item>地霊達の起床</item>
+    <item>暗闇の風穴</item>
+    <item>封じられた妖怪　～ Lost Place</item>
+    <item>渡る者の途絶えた橋</item>
+    <item>緑眼のジェラシー</item>
+    <item>旧地獄街道を行く</item>
+    <item>華のさかづき大江山</item>
+    <item>ハートフェルトファンシー</item>
+    <item>少女さとり　～ 3rd eye</item>
+    <item>廃獄ララバイ</item>
+    <item>死体旅行　～ Be of good cheer!</item>
+    <item>業火マントル</item>
+    <item>霊知の太陽信仰　～ Nuclear Fusion</item>
+    <item>ラストリモート</item>
+    <item>ハルトマンの妖怪少女</item>
+    <item>地霊達の帰宅</item>
+    <item>エネルギー黎明 ～ Future Dream...</item>
+    <item>青空の影</item>
+    <item>春の湊に</item>
+    <item>小さな小さな賢将</item>
+    <item>閉ざせし雲の通い路</item>
+    <item>万年置き傘にご注意を</item>
+    <item>スカイルーイン</item>
+    <item>時代親父とハイカラ少女</item>
+    <item>幽霊客船の時空を超えた旅</item>
+    <item>キャプテン・ムラサ</item>
+    <item>魔界地方都市エソテリア</item>
+    <item>虎柄の毘沙門天</item>
+    <item>法界の火</item>
+    <item>感情の摩天楼　～ Cosmic Mind</item>
+    <item>夜空のユーフォーロマンス</item>
+    <item>平安のエイリアン</item>
+    <item>妖怪寺</item>
+    <item>空の帰り道　～ Sky Dream</item>
+    <item>アンノウンX　～ Unfound Adventure</item>
+    <item>空に浮かぶ物体X</item>
+    <item>ニュースハウンド</item>
+    <item>あなたの町の怪事件</item>
+    <item>妖怪モダンコロニー</item>
+    <item>ネメシスの要塞</item>
+    <item>無間の鐘　～ Infinite Nightmare</item>
+    <item>春の氷精</item>
+    <item>可愛い大戦争のリフレーン</item>
+    <item>いたずらに命をかけて</item>
+    <item>年中夢中の好奇心</item>
+    <item>真夜中のフェアリーダンス</item>
+    <item>妖怪大戦争　～ Fairy Wars</item>
+    <item>ルーズレイン</item>
+    <item>メイガスナイト</item>
+    <item>春の氷精　- 静</item>
+    <item>プレイヤーズスコア</item>
+    <!-- v0.2.1.0 -->
+    <item>欲深き霊魂</item>
+    <item>死霊の夜桜</item>
+    <item>ゴーストリード</item>
+    <item>妖怪寺へようこそ</item>
+    <item>門前の妖怪小娘</item>
+    <item>素敵な墓場で暮しましょ</item>
+    <item>リジッドパラダイス</item>
+    <!-- v0.2.2.0 -->
+    <item>デザイアドライブ</item><!-- v0.2.2.1 -->
+    <item>古きユアンシェン</item>
+    <item>夢殿大祀廟</item>
+    <item>大神神話伝</item>
+    <item>小さな欲望の星空</item>
+    <item>聖徳伝説　～ True Administrator</item>
+    <item>妖怪裏参道</item>
+    <item>佐渡の二ッ岩</item>
+    <item>神社の新しい風</item>
+    <item>デザイアドリーム</item>
+</string-array>
+</resources>

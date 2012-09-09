@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="android_color">#A4C639</color>
+
+    <color name="word_key">#666666</color>
+    <color name="separater">#a4c639</color>
+    <color name="background_lite">#ffffff</color>
+
+    <color name="dialog_text_on_light">#fff</color>
+</resources>

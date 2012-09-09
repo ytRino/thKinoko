@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="cateories">
+    <item>キャラクター</item>
+    <item>スペルカード</item>
+    <item>楽曲</item>
+    <!-- item>その他</item -->
+</string-array>
+</resources>
