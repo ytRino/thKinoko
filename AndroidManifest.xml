@@ -14,6 +14,7 @@
         android:theme="@style/MyTheme"
         android:configChanges="orientation|screenSize"
         android:description="@string/app_description"
+        android:allowBackup="false"
         >
         <activity
             android:name=".KinokoActivity"
