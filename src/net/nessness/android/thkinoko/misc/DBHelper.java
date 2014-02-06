@@ -17,15 +17,15 @@ import android.util.Log;
 public class DBHelper {
 
 	// query mode to search
-    /** “Ç‚İŒŸõ */	public static final int QUERY_KEY = 0;
-	/** ‘‚«ŒŸõ */	public static final int QUERY_VAL = 1;
-	/** ˜A‘zŒŸõ */	public static final int QUERY_REF = 2;
-	/** ì•iŒŸõ */	public static final int QUERY_AT = 3;
+    /** èª­ã¿æ¤œç´¢ */	public static final int QUERY_KEY = 0;
+	/** æ›¸ãæ¤œç´¢ */	public static final int QUERY_VAL = 1;
+	/** é€£æƒ³æ¤œç´¢ */	public static final int QUERY_REF = 2;
+	/** ä½œå“æ¤œç´¢ */	public static final int QUERY_AT = 3;
 
 	// category type constants
-	/** ƒLƒƒƒ‰ƒNƒ^ƒJƒeƒSƒŠ */ public static final int CAT_CHAR = 0;
-	/** ƒXƒyƒ‹ƒJƒeƒSƒŠ     */ public static final int CAT_SPELL = 1;
-	/** ‰¹ŠyƒJƒeƒSƒŠ       */ public static final int CAT_MUSIC = 2;
+	/** ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã‚«ãƒ†ã‚´ãƒª */ public static final int CAT_CHAR = 0;
+	/** ã‚¹ãƒšãƒ«ã‚«ãƒ†ã‚´ãƒª     */ public static final int CAT_SPELL = 1;
+	/** éŸ³æ¥½ã‚«ãƒ†ã‚´ãƒª       */ public static final int CAT_MUSIC = 2;
 	public static final int CAT_ETC = 3; // not used
 	public static final int CAT_NUM = 3;
 	//public static final int CAT_EX = CAT_NUM+1;
@@ -89,7 +89,7 @@ public class DBHelper {
 		public int category;
 
 		/**
-		 * ƒŠƒXƒgƒrƒ…[ƒZƒpƒŒ[ƒ^—p
+		 * ãƒªã‚¹ãƒˆãƒ“ãƒ¥ãƒ¼ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿ç”¨
 		 * @param i
 		 */
 		public Word(int i) {
@@ -125,7 +125,7 @@ public class DBHelper {
 		private final int mCategory;
 
 		/**
-		 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		 * @param context
 		 * @param category
 		 * @param version
@@ -137,7 +137,7 @@ public class DBHelper {
 		}
 
 		/**
-		 * db‚ª‚È‚¢‚Æ‚«‚ÉŒÄ‚Î‚ê‚é
+		 * dbãŒãªã„ã¨ãã«å‘¼ã°ã‚Œã‚‹
 		 */
 		@Override
 		public void onCreate(SQLiteDatabase db) {
@@ -155,7 +155,7 @@ public class DBHelper {
 		}
 
 		/**
-		 * db‚Ìƒo[ƒWƒ‡ƒ“‚ªã‚ª‚Á‚½‚Æ‚«‚ÉŒÄ‚Î‚ê‚é
+		 * dbã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒä¸ŠãŒã£ãŸã¨ãã«å‘¼ã°ã‚Œã‚‹
 		 */
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -164,7 +164,7 @@ public class DBHelper {
 		}
 
 		/**
-		 * DB‰Šú‰» staticƒƒ\ƒbƒh
+		 * DBåˆæœŸåŒ– staticãƒ¡ã‚½ãƒƒãƒ‰
 		 * @param db
 		 * @param context
 		 * @param category
@@ -209,7 +209,7 @@ public class DBHelper {
 						count++;
 					}
 				}
-				// ƒXƒyƒ‹‚Í•ªŠ„‚³‚ê‚Ä‚é‚Ì‚Å‚³‚ç‚É“o˜^
+				// ã‚¹ãƒšãƒ«ã¯åˆ†å‰²ã•ã‚Œã¦ã‚‹ã®ã§ã•ã‚‰ã«ç™»éŒ²
 				if(category == DBHelper.CAT_SPELL){
 					for(int j = 0; j < resid2.length; j++){
 						//Log.d(Constants.TAG, "### "+category+" spell "+j);
@@ -229,7 +229,7 @@ public class DBHelper {
 					}
 				}
 
-				// Extra—p
+				// Extraç”¨
 				/*if(category == DBHelper.CAT_EX){
 					db.execSQL(DB_CREATE_EX);
 					String[] keys = res.getStringArray(resid[category][0]);
@@ -251,11 +251,11 @@ public class DBHelper {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	 * @param context
 	 */
 	public DBHelper(Context context){
-		// TODO ˆø”ŒŸ“¢
+		// TODO å¼•æ•°æ¤œè¨
 		//dbExtraOpenHelper = new DBOpenHelper(context, CAT_EX, DBHelper.DB_VERSION);
 
 		mDbOpenHelper = new DBOpenHelper[CAT_NUM];
@@ -306,19 +306,19 @@ public class DBHelper {
 	/*
 	public void useTransaction(boolean transaction){
 		if(transaction){
-			// ƒgƒ‰ƒ“ƒUƒNƒVƒ‡ƒ“ŠJn
+			// ãƒˆãƒ©ãƒ³ã‚¶ã‚¯ã‚·ãƒ§ãƒ³é–‹å§‹
 			beginTransaction = true;
 			for(int i = 0; i < CAT_NUM; i++){
 				db[i].execSQL("BEGIN");
 			}
 		}else if(beginTransaction){
-			// ƒgƒ‰ƒ“ƒUƒNƒVƒ‡ƒ“I—¹
+			// ãƒˆãƒ©ãƒ³ã‚¶ã‚¯ã‚·ãƒ§ãƒ³çµ‚äº†
 			beginTransaction = false;
 			for(int i = 0; i < CAT_NUM; i++){
 				db[i].execSQL("COMMIT");
 			}
 		}
-		//ŠJn‚³‚ê‚Ä‚È‚¢&&I—¹ƒtƒ‰ƒO->‰½‚à‚µ‚È‚¢
+		//é–‹å§‹ã•ã‚Œã¦ãªã„&&çµ‚äº†ãƒ•ãƒ©ã‚°->ä½•ã‚‚ã—ãªã„
 	}*/
 	/*
 	public void insert(Word word){
@@ -346,7 +346,7 @@ public class DBHelper {
 				c = this.mDB[i].rawQuery("select * from "+DBHelper.DB_TABLE, null);
 				int numRows = c.getCount();
 				Log.v(Constants.TAG, getClass().getSimpleName()+", query returns "+numRows+" rows.");
-				ret.add(new Word(i)); // ƒZƒpƒŒ[ƒ^—p‹óƒf[ƒ^
+				ret.add(new Word(i)); // ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿ç”¨ç©ºãƒ‡ãƒ¼ã‚¿
 				c.moveToFirst();
 				for(int j = 0; j < numRows; j++){
 					Word w = new Word();
@@ -375,12 +375,12 @@ public class DBHelper {
 		String query = null;
 		Cursor c = null;
 
-		// ƒ‚[ƒh‚É]‚Á‚ÄŒŸõ•¶‚ğ‚Â‚­‚é
+		// ãƒ¢ãƒ¼ãƒ‰ã«å¾“ã£ã¦æ¤œç´¢æ–‡ã‚’ã¤ãã‚‹
 		switch(queryMode){
 		case QUERY_VAL:
 			query = "select * from "+DBHelper.DB_TABLE+" where "+COLS.VAL.colName+" like '%"+key+"%';";
 			break;
-		case QUERY_REF: // ‚Ç‚¤‚·‚é
+		case QUERY_REF: // ã©ã†ã™ã‚‹
 			query = "select * from "+DBHelper.DB_TABLE+" where "+COLS.VAL.colName+" || "+COLS.REF.colName+" like '%"+key+"%';";
 			break;
 		case QUERY_AT:
@@ -391,10 +391,10 @@ public class DBHelper {
 			query = "select * from "+DBHelper.DB_TABLE+" where "+COLS.KEY.colName+" like '%"+key +"%';";
 		}
 
-		// ƒJƒeƒSƒŠ‚²‚Æ‚ÉDB‚ğŒŸõ
+		// ã‚«ãƒ†ã‚´ãƒªã”ã¨ã«DBã‚’æ¤œç´¢
 		try{
 			for(int category = 0; category < CAT_NUM; category++){
-			    // ƒ`ƒFƒbƒN‚ğŠO‚µ‚½ƒJƒeƒSƒŠ‚ÍŒŸõ‚µ‚È‚¢
+			    // ãƒã‚§ãƒƒã‚¯ã‚’å¤–ã—ãŸã‚«ãƒ†ã‚´ãƒªã¯æ¤œç´¢ã—ãªã„
 				if(!categories[category]){
 					continue;
 				}
@@ -406,7 +406,7 @@ public class DBHelper {
 					continue;
 				}
 
-				// ƒZƒpƒŒ[ƒ^—p‹óƒf[ƒ^‚ğ‚Â‚¯‚é
+				// ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿ç”¨ç©ºãƒ‡ãƒ¼ã‚¿ã‚’ã¤ã‘ã‚‹
 				ret.add(new Word(category));
 
 				int len = c.getCount();

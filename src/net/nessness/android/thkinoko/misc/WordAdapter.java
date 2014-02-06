@@ -29,10 +29,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
 	private boolean useImg;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	 * @param context
-	 * @param textViewResourceId ƒŒƒCƒAƒEƒg‚Ìw’è
-	 * @param words ƒf[ƒ^‚Ìw’è
+	 * @param textViewResourceId ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã®æŒ‡å®š
+	 * @param words ãƒ‡ãƒ¼ã‚¿ã®æŒ‡å®š
 	 */
 	public WordAdapter(Context context, List<Word> words) {
 		super(context, LAYOUT_WORD, words);
@@ -50,7 +50,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 	}
 
 	// ViewHolder
-	// ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ÅƒŒƒCƒAƒEƒgw’è‚·‚é‚Ì‚É’†g‚ªŒˆ‚ß‘Å‚¿‚É‚È‚Á‚Ä‚éc
+	// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆæŒ‡å®šã™ã‚‹ã®ã«ä¸­èº«ãŒæ±ºã‚æ‰“ã¡ã«ãªã£ã¦ã‚‹â€¦
 	static class ViewHolder{
 		ImageView charactor;
 		ImageView category;
@@ -77,7 +77,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 			}
 			return separaters.get(word.category);
 		}else if(view == null || view.getTag() == null){
-			// V‚µ‚­view‚ğ‚Â‚­‚éê‡
+			// æ–°ã—ãviewã‚’ã¤ãã‚‹å ´åˆ
 			view = this.inflater.inflate(LAYOUT_WORD, null);
 			holder = new ViewHolder();
 
@@ -91,10 +91,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
 			holder = (ViewHolder)view.getTag();
 		}
 
-		// ƒf[ƒ^‚ğƒZƒbƒg‚µ‚Ä•Ô‚·
+		// ãƒ‡ãƒ¼ã‚¿ã‚’ã‚»ãƒƒãƒˆã—ã¦è¿”ã™
 		setCharactorImage(holder.charactor, word);
 		setCategoryImage(holder.category, word);
-		holder.key.setText(word.key.split(";")[0]+"\n"+word.at); // ;ˆÈ~‚ğƒJƒbƒg
+		holder.key.setText(word.key.split(";")[0]+"\n"+word.at); // ;ä»¥é™ã‚’ã‚«ãƒƒãƒˆ
 		holder.value.setText(word.value);
 
 		return view;

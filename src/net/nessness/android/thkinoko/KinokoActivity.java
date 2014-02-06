@@ -149,7 +149,7 @@ public class KinokoActivity extends Activity {
         super.onStart();
         // Log.v(Constants.TAG, "###onSrart.");
 
-        // Preferences ‚©‚ç“Ç‚İ‚¾‚·
+        // Preferences ã‹ã‚‰èª­ã¿ã ã™
         switch(mLaunchMode) {
         case MODE_LAUNCHER:
             mRefSearchOpt.setChecked(mPref.getBoolean(PREF_USE_REF, false));
@@ -163,7 +163,7 @@ public class KinokoActivity extends Activity {
             mKeySearchOpt.setChecked(true);
         }
 
-        // ƒJƒeƒSƒŠƒtƒBƒ‹ƒ^[
+        // ã‚«ãƒ†ã‚´ãƒªãƒ•ã‚£ãƒ«ã‚¿ãƒ¼
         for(int i = 0; i < DBHelper.CAT_NUM; i++) {
             mCatFilter[i] = mPref.getBoolean(PREF_CAT + i, true);
         }
@@ -175,7 +175,7 @@ public class KinokoActivity extends Activity {
         super.onResume();
         // Log.v(Constants.TAG, "###onResumessss.");
         if(mWordAdapter != null) {
-            // ”wŒi•\¦İ’è‚Ìƒ`ƒFƒbƒN‚ÆƒŠƒXƒgÄ•`‰æ
+            // èƒŒæ™¯è¡¨ç¤ºè¨­å®šã®ãƒã‚§ãƒƒã‚¯ã¨ãƒªã‚¹ãƒˆå†æç”»
             mWordAdapter.updatePrefs(Constants.PREF_USE_IMG);
             mDicList.invalidateViews();
         }
@@ -187,7 +187,7 @@ public class KinokoActivity extends Activity {
         super.onPause();
         // Log.v(Constants.TAG, "###onPause.");
 
-        // Preferences ‚Ì•Û‘¶
+        // Preferences ã®ä¿å­˜
         SharedPreferences.Editor editor = mPref.edit();
         switch(mLaunchMode) {
         case MODE_LAUNCHER:
@@ -249,14 +249,14 @@ public class KinokoActivity extends Activity {
         Intent intent = getIntent();
         String action = intent.getAction();
 
-        // ƒ}ƒbƒVƒ…ƒ‹[ƒ€‚©‚ç‹N“®
+        // ãƒãƒƒã‚·ãƒ¥ãƒ«ãƒ¼ãƒ ã‹ã‚‰èµ·å‹•
         if(action != null && action.equals(SIMEJI_ACTION)) {
             mLaunchMode = MODE_MUSHROOM;
             String key = intent.getStringExtra(SIMEJI_KEY);
             mKeywordBox.setText(key);
             this.search(key);
         }
-        // •’Ê‚É‹N“®
+        // æ™®é€šã«èµ·å‹•
         else {
             mLaunchMode = MODE_LAUNCHER;
             search(mLastQueryKey);
@@ -264,7 +264,7 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * Ä“xŒŸõ
+     * å†åº¦æ¤œç´¢
      */
     private void refleshSearch() {
         // Log.v(Constants.TAG, "###refleshSearch.");
@@ -272,9 +272,9 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * ŒŸõ
+     * æ¤œç´¢
      *
-     * @param key ŒŸõƒL[ƒ[ƒh
+     * @param key æ¤œç´¢ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
      */
     private void search(final CharSequence key) {
         // Log.v(Constants.TAG, "###search(key).");
@@ -282,10 +282,10 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * ŒŸõ
+     * æ¤œç´¢
      *
-     * @param key ŒŸõƒL[ƒ[ƒh
-     * @param queryMode ŒŸõƒ‚[ƒh
+     * @param key æ¤œç´¢ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+     * @param queryMode æ¤œç´¢ãƒ¢ãƒ¼ãƒ‰
      */
     private void search(final CharSequence key, final int queryMode) {
         // Log.v(Constants.TAG, "###search("+key+", "+ queryMode+").");
@@ -296,7 +296,7 @@ public class KinokoActivity extends Activity {
         mLastQueryKey = key;
         mLastQueryMode = queryMode;
 
-        // TODO: ‚±‚ê‘åä•v?
+        // TODO: ã“ã‚Œå¤§ä¸ˆå¤«?
         final Handler mHandler = new Handler();
         mHandler.post(new Runnable() {
             public void run() {
@@ -315,7 +315,7 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * ŒŸõƒ‚[ƒh‚Ìæ“¾
+     * æ¤œç´¢ãƒ¢ãƒ¼ãƒ‰ã®å–å¾—
      *
      * @return DBHelper.QUERY_*
      */
@@ -339,7 +339,7 @@ public class KinokoActivity extends Activity {
      */
 
     /**
-     * ƒƒjƒ…[
+     * ãƒ¡ãƒ‹ãƒ¥ãƒ¼
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -372,7 +372,7 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[
+     * ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼
      */
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
@@ -387,7 +387,7 @@ public class KinokoActivity extends Activity {
 
         String[] s = w.at.split(":");
         if(s.length > 1) {
-            // ItemId‚ÉƒLƒƒƒ‰ƒNƒ^[¯•Ê”Ô†‚ğİ’è
+            // ItemIdã«ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼è­˜åˆ¥ç•ªå·ã‚’è¨­å®š
             menu.add(CMENU_WHO, Integer.parseInt(s[1]), 0, R.string.cmenu_char);
         }
         char at[] = s[0].toCharArray();
@@ -402,21 +402,21 @@ public class KinokoActivity extends Activity {
         int id = item.getItemId();
         mKeywordBox.setText("");
         if(id > 0)
-            search(String.format(":%04d", id), DBHelper.QUERY_AT);     // ƒLƒƒƒ‰ƒNƒ^[(Œ³‚Ì4Œ…‚É–ß‚·)
+            search(String.format(":%04d", id), DBHelper.QUERY_AT);     // ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼(å…ƒã®4æ¡ã«æˆ»ã™)
         else
-            search(item.getTitle(), DBHelper.QUERY_AT); // ì•i
+            search(item.getTitle(), DBHelper.QUERY_AT); // ä½œå“
         return true;
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
-        // TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+        // TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
         super.onConfigurationChanged(newConfig);
         // Log.v(Constants.TAG, "###onConfigChanged.");
     }
 
     /**
-     * widget‚Ì‰Šú‰»
+     * widgetã®åˆæœŸåŒ–
      */
     private void initWidgets() {
         // Log.v(Constants.TAG, "###initWidget.");
@@ -438,7 +438,7 @@ public class KinokoActivity extends Activity {
                     ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
                     cm.setText(result);
                     Toast.makeText(KinokoActivity.this,
-                            "ƒNƒŠƒbƒvƒ{[ƒh‚É\"" + result + "\"‚ğƒRƒs[‚µ‚Ü‚µ‚½",
+                            "ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«\"" + result + "\"ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã—ãŸ",
                             Toast.LENGTH_LONG).show();
                     try {
                         Thread.sleep(500);
@@ -526,7 +526,7 @@ public class KinokoActivity extends Activity {
         mCatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ƒJƒeƒSƒŠ‘I‘ğƒ_ƒCƒAƒƒO•\¦
+                // ã‚«ãƒ†ã‚´ãƒªé¸æŠãƒ€ã‚¤ã‚¢ãƒ­ã‚°è¡¨ç¤º
                 // catChooser.show();
                 catDialog.show();
                 // Log.d(Constants.TAG,
@@ -538,7 +538,7 @@ public class KinokoActivity extends Activity {
     /**
      * @param titleResId
      * @param msgResId
-     * @return ƒ^ƒCƒgƒ‹‚ÆƒƒbƒZ[ƒW‚ğİ’è‚µ‚½Builder
+     * @return ã‚¿ã‚¤ãƒˆãƒ«ã¨ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¨­å®šã—ãŸBuilder
      */
     private AlertDialog.Builder createMessageDialog(int titleResId, int msgResId) {
         AlertDialog.Builder builder = createDialogBuilderCompat();
