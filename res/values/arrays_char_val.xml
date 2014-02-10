@@ -1,82 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string-array name="char_vals">
-    <item>博麗 霊夢</item> <!-- @ -->
-    <item>霧雨 魔理沙</item>
-    <item>ルーミア</item>
-    <item>チルノ</item>
-    <item>紅 美鈴</item>
-    <item>パチュリー・ノーレッジ</item>
-    <item>十六夜 咲夜</item>
-    <item>レミリア・スカーレット</item>
-    <item>フランドール・スカーレット</item>
-    <item>レティ・ホワイトロック</item>
-    <item>橙</item>
-    <item>アリス・マーガトロイド</item>
-    <item>リリーホワイト</item>
-    <item>ルナサ・プリズムリバー</item>
-    <item>メルラン・プリズムリバー</item>
-    <item>リリカ・プリズムリバー</item>
-    <item>魂魄 妖夢</item>
-    <item>西行寺 幽々子</item>
-    <item>八雲 藍</item>
-    <item>八雲 紫</item>
-    <item>伊吹 萃香</item>
-    <item>リグル・ナイトバグ</item>
-    <item>ミスティア・ローレライ</item>
-    <item>上白沢 慧音</item>
-    <item>因幡 てゐ</item>
-    <item>鈴仙・優曇華院・イナバ</item>
-    <item>八意 永琳</item> <!-- @ -->
-    <item>蓬莱山 輝夜</item>
-    <item>藤原 妹紅</item>
-    <item>射命丸 文</item>
-    <item>メディスン・メランコリー</item> <!-- @ -->
-    <item>風見 幽香</item>
-    <item>小野塚 小町</item>
-    <item>四季映姫・ヤマザナドゥ</item>
-    <item>秋 静葉</item>
-    <item>秋 穣子</item>
-    <item>鍵山 雛</item>
-    <item>河城 にとり</item>
-    <item>犬走 椛</item>
-    <item>東風谷 早苗</item> <!-- @ -->
-    <item>八坂 神奈子</item>
-    <item>洩矢 諏訪子</item> <!-- @ -->
-    <item>永江 衣玖</item> <!-- @ -->
-    <item>比那名居 天子</item> <!-- @ -->
-    <item>キスメ</item> <!-- @ -->
-    <item>黒谷 ヤマメ</item> <!-- @ -->
-    <item>水橋 パルスィ</item>
-    <item>星熊 勇儀</item> <!-- @ -->
-    <item>古明地 さとり</item>
-    <item>火焔猫 燐</item> <!-- @ -->
-    <item>霊烏路 空</item>
-    <item>古明地 こいし</item>
-    <item>ナズーリン</item> <!-- @ -->
-    <item>多々良 小傘</item> <!-- @ -->
-    <item>雲居 一輪&amp;雲山</item>
-    <item>村紗 水蜜</item>
-    <item>寅丸 星</item>
-    <item>聖 白蓮</item> <!-- @ -->
-    <item>封獣 ぬえ</item>
-    <item>姫海棠 はたて</item>
-    <item>サニーミルク</item> <!-- @ -->
-    <item>ルナチャイルド</item> <!-- @ -->
-    <item>スターサファイア</item> <!-- @ -->
-    <item>大妖精</item>
-    <item>小悪魔</item>
-    <item>稗田 阿求</item>
-    <item>森近 霖之助</item> <!-- @ -->
-    <item>大ナマズ</item> <!-- @ -->
+    <item>博麗 霊夢,紅妖永萃花風緋地星非ダ神心輝,0001</item> <!-- @ -->
+    <item>霧雨 魔理沙,紅妖永萃花風緋地星非ダ大神心輝,0002</item>
+    <item>ルーミア,紅文,0601</item>
+    <item>チルノ,紅妖花文非大,0602</item>
+    <item>紅 美鈴,紅萃文非,0603</item>
+    <item>パチュリー・ノーレッジ,紅萃文緋地,0604</item>
+    <item>十六夜 咲夜,紅妖永萃花文緋非輝,0605</item>
+    <item>レミリア・スカーレット,紅永萃文緋非,0606</item>
+    <item>フランドール・スカーレット,紅文,0607</item>
+    <item>レティ・ホワイトロック,妖文,0701</item>
+    <item>橙,妖文,0702</item>
+    <item>アリス・マーガトロイド,妖永萃文緋地非,0703</item>
+    <item>リリーホワイト,妖花大,0704</item>
+    <item>ルナサ・プリズムリバー,妖花,0705</item>
+    <item>メルラン・プリズムリバー,妖花,0706</item>
+    <item>リリカ・プリズムリバー,妖花,0707</item>
+    <item>魂魄 妖夢,妖永萃花文緋非神,0708</item>
+    <item>西行寺 幽々子,妖永萃文緋非神,0709</item>
+    <item>八雲 藍,妖文,0710</item>
+    <item>八雲 紫,妖永萃文緋地非,0711</item>
+    <item>伊吹 萃香,萃文緋地非ダ,0751</item>
+    <item>リグル・ナイトバグ,永文,0801</item>
+    <item>ミスティア・ローレライ,永花,0802</item>
+    <item>上白沢 慧音,永文,0803</item>
+    <item>因幡 てゐ,永花文,0804</item>
+    <item>鈴仙・優曇華院・イナバ,永花文緋非,0805</item>
+    <item>八意 永琳,永文,0806</item> <!-- @ -->
+    <item>蓬莱山 輝夜,永文,0807</item>
+    <item>藤原 妹紅,永文,0808</item>
+    <item>射命丸 文,花文風緋地非ダ,0901</item>
+    <item>メディスン・メランコリー,花文,0902</item> <!-- @ -->
+    <item>風見 幽香,花,0903</item>
+    <item>小野塚 小町,花文緋非,0904</item>
+    <item>四季映姫・ヤマザナドゥ,花文,0905</item>
+    <item>秋 静葉,風ダ,1001</item>
+    <item>秋 穣子,風ダ,1002</item>
+    <item>鍵山 雛,風ダ,1003</item>
+    <item>河城 にとり,風地ダ心,1004</item>
+    <item>犬走 椛,風ダ,1005</item>
+    <item>東風谷 早苗,風地星非ダ神,1006</item> <!-- @ -->
+    <item>八坂 神奈子,風ダ,1007</item>
+    <item>洩矢 諏訪子,風非ダ,1008</item> <!-- @ -->
+    <item>永江 衣玖,緋非ダ,1051</item> <!-- @ -->
+    <item>比那名居 天子,緋非ダ,1052</item> <!-- @ -->
+    <item>キスメ,地ダ,1101</item> <!-- @ -->
+    <item>黒谷 ヤマメ,地ダ,1102</item> <!-- @ -->
+    <item>水橋 パルスィ,地ダ,1103</item>
+    <item>星熊 勇儀,地ダ,1104</item> <!-- @ -->
+    <item>古明地 さとり,地ダ,1105</item>
+    <item>火焔猫 燐,地ダ,1106</item> <!-- @ -->
+    <item>霊烏路 空,地非ダ,1107</item>
+    <item>古明地 こいし,地ダ心,1108</item>
+    <item>ナズーリン,星ダ,1201</item> <!-- @ -->
+    <item>多々良 小傘,星ダ神,1202</item> <!-- @ -->
+    <item>雲居 一輪&amp;雲山,星ダ心,1203</item>
+    <item>村紗 水蜜,星ダ,1205</item>
+    <item>寅丸 星,星ダ,1206</item>
+    <item>聖 白蓮,星ダ心,1207</item> <!-- @ -->
+    <item>封獣 ぬえ,星ダ,1208</item>
+    <item>姫海棠 はたて,ダ,1251</item>
+    <item>サニーミルク,大,1281</item> <!-- @ -->
+    <item>ルナチャイルド,大,1282</item> <!-- @ -->
+    <item>スターサファイア,大,1283</item> <!-- @ -->
+    <item>大妖精,紅大,0611</item>
+    <item>小悪魔,紅,0612</item>
+    <item>稗田 阿求,,9900</item>
+    <item>森近 霖之助,,9901</item> <!-- @ -->
+    <item>大ナマズ,非,1231</item> <!-- @ -->
     <!-- v0.2.1.0 -->
-    <item>幽谷 響子</item>
-    <item>宮古 芳香</item>
+    <item>幽谷 響子,神,1301</item>
+    <item>宮古 芳香,神,1302</item>
     <!-- v0.2.2.0 -->
-    <item>霍 青娥</item>
-    <item>蘇我 屠自古</item>
-    <item>物部 布都</item>
-    <item>豊聡耳 神子</item>
-    <item>二ッ岩 マミゾウ</item>
+    <item>霍 青娥,神,1303</item>
+    <item>蘇我 屠自古,神,1304</item>
+    <item>物部 布都,神心,1305</item>
+    <item>豊聡耳 神子,神心,1306</item>
+    <item>二ッ岩 マミゾウ,神心,1307</item>
+    <!-- v0.4.0.0 -->
+    <item>秦こころ,心,1351</item>
+    <item>わかさぎ姫,輝,1401</item>
+    <item>赤蛮奇,輝,1402</item>
+    <item>今泉 影狼,輝,1403</item>
+    <item>九十九 弁々,輝,1404</item>
+    <item>九十九 八橋,輝,1405</item>
+    <item>鬼人 正邪,輝,1406</item>
+    <item>少名 神妙丸,輝,1407</item>
+    <item>堀川 雷鼓,輝,1408</item>
 </string-array>
 </resources>

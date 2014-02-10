@@ -1,11 +1,5 @@
 package net.nessness.android.thkinoko;
 
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
-import net.nessness.android.thkinoko.misc.Constants;
-import net.nessness.android.thkinoko.misc.DBHelper;
-import net.nessness.android.thkinoko.misc.DBHelper.Word;
-import net.nessness.android.thkinoko.misc.WordAdapter;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -36,6 +30,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import net.nessness.android.thkinoko.misc.Constants;
+import net.nessness.android.thkinoko.misc.DBHelper;
+import net.nessness.android.thkinoko.misc.Word;
+import net.nessness.android.thkinoko.misc.WordAdapter;
+
+import java.lang.reflect.Constructor;
+import java.util.ArrayList;
 
 public class KinokoActivity extends Activity {
     public static final String SIMEJI_KEY = "replace_key";
@@ -88,7 +90,6 @@ public class KinokoActivity extends Activity {
                     .setView(v)
                     .create();
             dialog.show();
-
         }
 
         @Override
@@ -99,6 +100,9 @@ public class KinokoActivity extends Activity {
 
         @Override
         protected void onPostExecute(Void result) {
+            if(dialog == null || !dialog.isShowing()){
+                return;
+            }
             dialog.dismiss();
             // Log.d(Constants.TAG,
             // getClass().getSimpleName()+", # end DBTask.");
@@ -329,14 +333,10 @@ public class KinokoActivity extends Activity {
         return DBHelper.QUERY_KEY;
     }
 
+
     private String getValue(AdapterView<?> adapter, int position) {
         return ((Word)adapter.getItemAtPosition(position)).value;
     }
-
-    /*
-     * private void eraseDB(){ dbHelper.eraseAllDB(); wordAdapter = new
-     * WordAdapter(this, dbHelper.getAll()); dicList.setAdapter(wordAdapter); }
-     */
 
     /**
      * メニュー
@@ -371,29 +371,29 @@ public class KinokoActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * コンテキストメニュー
-     */
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenuInfo menuInfo) {
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
 
         Word w = (Word)mDicList.getItemAtPosition(((AdapterContextMenuInfo)menuInfo).position);
 
-        if(w.at.length() < 1) {
+        if((w == null) || w.at.length() < 1) {
             return;
         }
 
-        String[] s = w.at.split(":");
-        if(s.length > 1) {
-            // ItemIdにキャラクター識別番号を設定
-            menu.add(CMENU_WHO, Integer.parseInt(s[1]), 0, R.string.cmenu_char);
+        // ItemIdにキャラクター識別番号を設定
+        // TODO: 具体的なキャラ名にしたほうがわかりやすい
+        // 変換テーブル作るのは微妙だけどDBから引っ張るのは大げさっぽい
+        String character = w.getPrimaryCharacter();
+        if(character != null){
+            menu.add(CMENU_WHO, Integer.parseInt(character), 0, R.string.cmenu_char);
         }
-        char at[] = s[0].toCharArray();
-        int len = s[0].length();
+
+        char at[] = w.at.toCharArray();
+        int len = at.length;
         for(int i = 0; i < len; i++) {
-            menu.add(CMENU_AT, 0, 0, at[i] + "");
+            // TODO: 萃 -> 萃夢想関連の語句を見る みたいな感じにする?
+            menu.add(CMENU_AT, 0, 0, String.valueOf(at[i]));
         }
     }
 
@@ -402,7 +402,7 @@ public class KinokoActivity extends Activity {
         int id = item.getItemId();
         mKeywordBox.setText("");
         if(id > 0)
-            search(String.format(":%04d", id), DBHelper.QUERY_AT);     // キャラクター(元の4桁に戻す)
+            search(String.format("%04d", id), DBHelper.QUERY_CHA);     // キャラクター(元の4桁に戻す)
         else
             search(item.getTitle(), DBHelper.QUERY_AT); // 作品
         return true;
@@ -536,8 +536,8 @@ public class KinokoActivity extends Activity {
     }
 
     /**
-     * @param titleResId
-     * @param msgResId
+     * @param titleResId title
+     * @param msgResId msg
      * @return タイトルとメッセージを設定したBuilder
      */
     private AlertDialog.Builder createMessageDialog(int titleResId, int msgResId) {
@@ -555,7 +555,7 @@ public class KinokoActivity extends Activity {
             new Class[] {
                     Context.class, int.class
             };
-    private Constructor<AlertDialog.Builder> mBuiderConstructor;
+    private Constructor<AlertDialog.Builder> mBuilderConstructor;
     private Object[] mBuilderConstructorArgs =
             new Object[] {
                     this, AlertDialog.THEME_TRADITIONAL
@@ -563,27 +563,27 @@ public class KinokoActivity extends Activity {
     private boolean mBuilderConstructorChecked = false;
 
     /**
-     * check if AlertDoalog.Builder(Context, int) is usable or not. See
+     * check if AlertDialog.Builder(Context, int) is usable or not. See
      * {@link AlertDialog.Builder}.<br> Make sure you can't call
-     * AlertDoalog.Builder(Context, int) direct even if usable.<br> This is
+     * AlertDialog.Builder(Context, int) direct even if usable.<br> This is
      * because minSdkVersion is set to 4 and such device will crash even if you
-     * didin't call constructor.
+     * didn't call constructor.
      *
      * @return true if Constructor is usable.
      */
     private boolean isHoneyCombBuilderExecutable() {
         if(mBuilderConstructorChecked) {
-            return (mBuiderConstructor == null)? false: true;
+            return (mBuilderConstructor == null)? false: true;
         }
 
         boolean b = false;
         mBuilderConstructorChecked = true;
         try {
             Class<AlertDialog.Builder> clazz = AlertDialog.Builder.class;
-            mBuiderConstructor = clazz.getConstructor(mBuilderConstructorSignature);
+            mBuilderConstructor = clazz.getConstructor(mBuilderConstructorSignature);
             b = true;
         }catch(NoSuchMethodException e) {
-            mBuiderConstructor = null;
+            mBuilderConstructor = null;
             b = false;
         }
         return b;
@@ -593,7 +593,7 @@ public class KinokoActivity extends Activity {
         AlertDialog.Builder builder;
         if(isHoneyCombBuilderExecutable()) {
             try {
-                builder = mBuiderConstructor.newInstance(mBuilderConstructorArgs);
+                builder = mBuilderConstructor.newInstance(mBuilderConstructorArgs);
                 // Log.d(Constants.TAG, "use theme builder");
             }catch(Exception e) {
                 // Log.d(Constants.TAG, "use old builder.");
