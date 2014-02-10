@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b3bc774-1491-4165-9c37-d5333641efb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays_music_key.xml" afterPath="$PROJECT_DIR$/res/values/arrays_music_key.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
     </list>
     <ignored path="thKinoko.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +81,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="arrays_music_key.xml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="29" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0567297" vertical-offset="0" max-vertical-offset="899">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="arrays_music_key.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/res/values/arrays_music_key.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="172" column="19" selection-start="5992" selection-end="5992" vertical-scroll-proportion="0.3759733" vertical-offset="2586" max-vertical-offset="3485">
+                <state line="184" column="16" selection-start="6336" selection-end="6336" vertical-scroll-proportion="0.0" vertical-offset="2586" max-vertical-offset="3485">
                   <folding />
                 </state>
               </provider>
@@ -237,7 +246,6 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays_char_key.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays_char_ref.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays_char_at.xml" />
@@ -255,6 +263,7 @@
         <option value="$PROJECT_DIR$/src/net/nessness/android/thkinoko/KinokoActivity.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/res/values/arrays_music_key.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -970,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="219" selection-end="219" vertical-scroll-proportion="0.075723834" vertical-offset="0" max-vertical-offset="898">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/arrays_char_ref.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="23" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1649">
@@ -1173,7 +1175,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/arrays_music_key.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="19" selection-start="5992" selection-end="5992" vertical-scroll-proportion="0.3759733" vertical-offset="2586" max-vertical-offset="3485">
+        <state line="184" column="16" selection-start="6336" selection-end="6336" vertical-scroll-proportion="0.0" vertical-offset="2586" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0567297" vertical-offset="0" max-vertical-offset="899">
           <folding />
         </state>
       </provider>
