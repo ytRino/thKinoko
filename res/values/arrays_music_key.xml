@@ -170,30 +170,30 @@
     <item>ゆめどのだいしびょう</item>
     <item>おおみわしんわでん</item>
     <item>ちいさなよくぼうのほしぞら</item>
-    <item>しょうとくでんせつ　～ True Administrator</item>
+    <item>しょうとくでんせつ True Administrator</item>
     <item>ようかいうらさんどう</item>
     <item>さどのふたついわ</item>
     <item>じんじゃのあたらしいかぜ</item>
     <item>でざいあどりーむ</item>
     <!-- 0.4.0.0 -->
-    <item>幻想郷の二ッ岩,心</item>
-    <item>亡失のエモーション,心</item>
-    <item>不思議なお祓い棒,輝</item>
-    <item>ミストレイク,輝</item>
-    <item>秘境のマーメイド,輝</item>
-    <item>運河を行き交う人妖,輝</item>
-    <item>柳の下のデュラハン,輝</item>
-    <item>満月の竹林,輝</item>
-    <item>孤独なウェアウルフ,輝</item>
-    <item>マジカルストーム,輝</item>
-    <item>幻想浄瑠璃,輝</item>
-    <item>空中に沈む輝針城,輝</item>
-    <item>リバースイデオロギー,輝</item>
-    <item>針小棒大の天守閣,輝</item>
-    <item>輝く針の小人族　～ Little Princess,輝</item>
-    <item>魔力の雷雲,輝</item>
-    <item>始原のビート　～ Pristine Beat,輝</item>
-    <item>小槌の魔力,輝</item>
-    <item>不思議な不思議な道具達,輝</item>
+    <item>げんそうきょうのふたついわ</item>
+    <item>ぼうしつのえもーしょん</item>
+    <item>ふしぎなおはらいぼう</item>
+    <item>みすとれいく</item>
+    <item>ひきょうのまーめいど</item>
+    <item>うんがをいきかうじんよう</item>
+    <item>やなぎのしたのでゅらはん</item>
+    <item>まんげつのちくりん</item>
+    <item>こどくなうぇあうるふ</item>
+    <item>まじかるすとーむ</item>
+    <item>げんそうじょうるり</item>
+    <item>くうちゅうにしずむきしんじょう</item>
+    <item>りばーすいでおろぎー</item>
+    <item>しんしょうぼうだいのてんしゅかく</item>
+    <item>かがやくはりのこびとぞく Little Princess</item>
+    <item>まりょくのらいうん</item>
+    <item>しげんのびーと Pristine Beat</item>
+    <item>こづちのまりょく</item>
+    <item>ふしぎなふしぎなどうぐたち</item>
 </string-array>
 </resources>
