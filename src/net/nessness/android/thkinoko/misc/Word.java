@@ -23,10 +23,11 @@ public class Word {
 
     /**
      * returns primary character id string
+     *
      * @return null if {@value cha} is null or empty.
      */
-    public String getPrimaryCharacter(){
-        if(cha == null || cha.equals("")){
+    public String getPrimaryCharacter() {
+        if (cha == null || cha.equals("")) {
             return null;
         }
 
