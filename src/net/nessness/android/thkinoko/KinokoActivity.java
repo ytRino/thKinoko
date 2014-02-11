@@ -39,7 +39,7 @@ import net.nessness.android.thkinoko.misc.WordAdapter;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 
-public class KinokoActivity extends Activity {
+public class KinokoActivity extends Activity{
     public static final String SIMEJI_KEY = "replace_key";
     public static final String SIMEJI_ACTION = "com.adamrocker.android.simeji.ACTION_INTERCEPT";
 
@@ -77,11 +77,11 @@ public class KinokoActivity extends Activity {
     private CharSequence mLastQueryKey;
     private int mLastQueryMode;
 
-    private class DBTask extends AsyncTask<Void, Void, Void> {
+    private class DBTask extends AsyncTask<Void, Void, Void>{
         private AlertDialog dialog;
 
         @Override
-        protected void onPreExecute() {
+        protected void onPreExecute(){
             // Log.d(Constants.TAG,
             // getClass().getSimpleName()+", # start DBTask.");
             View v = getLayoutInflater().inflate(R.layout.dialog_progress, null);
@@ -93,14 +93,14 @@ public class KinokoActivity extends Activity {
         }
 
         @Override
-        protected Void doInBackground(Void... arg0) {
+        protected Void doInBackground(Void... arg0){
             mDbHelper = new DBHelper(KinokoActivity.this);
             return null;
         }
 
         @Override
-        protected void onPostExecute(Void result) {
-            if(dialog == null || !dialog.isShowing()){
+        protected void onPostExecute(Void result){
+            if(dialog == null || ! dialog.isShowing()){
                 return;
             }
             dialog.dismiss();
@@ -110,7 +110,7 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         // Log.v(Constants.TAG, "###onCreate.");
 
@@ -130,18 +130,18 @@ public class KinokoActivity extends Activity {
         mLastQueryMode = 0;
 
         mCatFilter = new boolean[DBHelper.CAT_NUM];
-        for(int i = 0; i < DBHelper.CAT_NUM; i++) {
+        for(int i = 0; i < DBHelper.CAT_NUM; i++){
             mCatFilter[i] = mPref.getBoolean(PREF_CAT + i, true);
         }
 
-        mDicList = (ListView)findViewById(R.id.knk_dictionary);
-        mKeywordBox = (EditText)findViewById(R.id.knk_keyword);
-        mSearchButton = (ImageButton)findViewById(R.id.knk_search);
-        mCatButton = (ImageButton)findViewById(R.id.knk_category);
-        mSearchOptGroup = (RadioGroup)findViewById(R.id.knk_search_opt);
-        mKeySearchOpt = (RadioButton)findViewById(R.id.knk_search_key);
-        mValSearchOpt = (RadioButton)findViewById(R.id.knk_search_val);
-        mRefSearchOpt = (CheckBox)findViewById(R.id.knk_search_val_ref);
+        mDicList = (ListView) findViewById(R.id.knk_dictionary);
+        mKeywordBox = (EditText) findViewById(R.id.knk_keyword);
+        mSearchButton = (ImageButton) findViewById(R.id.knk_search);
+        mCatButton = (ImageButton) findViewById(R.id.knk_category);
+        mSearchOptGroup = (RadioGroup) findViewById(R.id.knk_search_opt);
+        mKeySearchOpt = (RadioButton) findViewById(R.id.knk_search_key);
+        mValSearchOpt = (RadioButton) findViewById(R.id.knk_search_val);
+        mRefSearchOpt = (CheckBox) findViewById(R.id.knk_search_val_ref);
 
         this.initWidgets();
 
@@ -149,17 +149,17 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    protected void onStart() {
+    protected void onStart(){
         super.onStart();
         // Log.v(Constants.TAG, "###onSrart.");
 
         // Preferences から読みだす
-        switch(mLaunchMode) {
+        switch(mLaunchMode){
         case MODE_LAUNCHER:
             mRefSearchOpt.setChecked(mPref.getBoolean(PREF_USE_REF, false));
-            if(mPref.getBoolean(PREF_USE_KEY, true)) {
+            if(mPref.getBoolean(PREF_USE_KEY, true)){
                 mKeySearchOpt.setChecked(true);
-            }else {
+            }else{
                 mValSearchOpt.setChecked(true);
             }
             break;
@@ -168,17 +168,17 @@ public class KinokoActivity extends Activity {
         }
 
         // カテゴリフィルター
-        for(int i = 0; i < DBHelper.CAT_NUM; i++) {
+        for(int i = 0; i < DBHelper.CAT_NUM; i++){
             mCatFilter[i] = mPref.getBoolean(PREF_CAT + i, true);
         }
 
     }
 
     @Override
-    protected void onResume() {
+    protected void onResume(){
         super.onResume();
         // Log.v(Constants.TAG, "###onResumessss.");
-        if(mWordAdapter != null) {
+        if(mWordAdapter != null){
             // 背景表示設定のチェックとリスト再描画
             mWordAdapter.updatePrefs(Constants.PREF_USE_IMG);
             mDicList.invalidateViews();
@@ -187,24 +187,24 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    protected void onPause() {
+    protected void onPause(){
         super.onPause();
         // Log.v(Constants.TAG, "###onPause.");
 
         // Preferences の保存
         SharedPreferences.Editor editor = mPref.edit();
-        switch(mLaunchMode) {
+        switch(mLaunchMode){
         case MODE_LAUNCHER:
             editor.putBoolean(PREF_USE_KEY, mKeySearchOpt.isChecked());
             editor.putBoolean(PREF_USE_REF, mRefSearchOpt.isChecked());
-            for(int i = 0; i < DBHelper.CAT_NUM; i++) {
+            for(int i = 0; i < DBHelper.CAT_NUM; i++){
                 editor.putBoolean(PREF_CAT + i, mCatFilter[i]);
             }
             break;
         case MODE_MUSHROOM:
         }
 
-        for(int i = 0; i < DBHelper.CAT_NUM; i++) {
+        for(int i = 0; i < DBHelper.CAT_NUM; i++){
             editor.putBoolean(PREF_CAT + i, mCatFilter[i]);
         }
 
@@ -212,13 +212,13 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    protected void onStop() {
+    protected void onStop(){
         super.onStop();
         // Log.v(Constants.TAG, "###onStop.");
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
         // Log.v(Constants.TAG, "###onSaveInstanceState.");
 
@@ -228,7 +228,7 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
         // Log.v(Constants.TAG,
         // "###onRestoreInstanceState."+savedInstanceState.getCharSequence(STATE_QUERY_KEY));
@@ -239,29 +239,29 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    protected void onDestroy() {
+    protected void onDestroy(){
         super.onDestroy();
         // Log.v(Constants.TAG, "###onDestroy.");
-        if(mDbHelper != null) {
+        if(mDbHelper != null){
             mDbHelper.cleanup();
             mDbHelper = null;
         }
     }
 
-    private void handleIntent() {
+    private void handleIntent(){
         // Log.v(Constants.TAG, "###handleIntent.");
         Intent intent = getIntent();
         String action = intent.getAction();
 
         // マッシュルームから起動
-        if(action != null && action.equals(SIMEJI_ACTION)) {
+        if(action != null && action.equals(SIMEJI_ACTION)){
             mLaunchMode = MODE_MUSHROOM;
             String key = intent.getStringExtra(SIMEJI_KEY);
             mKeywordBox.setText(key);
             this.search(key);
         }
         // 普通に起動
-        else {
+        else{
             mLaunchMode = MODE_LAUNCHER;
             search(mLastQueryKey);
         }
@@ -270,7 +270,7 @@ public class KinokoActivity extends Activity {
     /**
      * 再度検索
      */
-    private void refleshSearch() {
+    private void refleshSearch(){
         // Log.v(Constants.TAG, "###refleshSearch.");
         search(mLastQueryKey, mLastQueryMode);
     }
@@ -280,7 +280,7 @@ public class KinokoActivity extends Activity {
      *
      * @param key 検索キーワード
      */
-    private void search(final CharSequence key) {
+    private void search(final CharSequence key){
         // Log.v(Constants.TAG, "###search(key).");
         search(key, getQueryMode());
     }
@@ -291,10 +291,10 @@ public class KinokoActivity extends Activity {
      * @param key 検索キーワード
      * @param queryMode 検索モード
      */
-    private void search(final CharSequence key, final int queryMode) {
+    private void search(final CharSequence key, final int queryMode){
         // Log.v(Constants.TAG, "###search("+key+", "+ queryMode+").");
         // getWindow().setSoftInputMode(LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-        ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+        ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE))
                 .hideSoftInputFromWindow(mKeywordBox.getWindowToken(), 0);
 
         mLastQueryKey = key;
@@ -302,13 +302,13 @@ public class KinokoActivity extends Activity {
 
         // TODO: これ大丈夫?
         final Handler mHandler = new Handler();
-        mHandler.post(new Runnable() {
-            public void run() {
-                if(mDbHelper == null) {
+        mHandler.post(new Runnable(){
+            public void run(){
+                if(mDbHelper == null){
                     // Log.d(Constants.TAG,
                     // getClass().getSimpleName()+", wordAdapter is null.");
                     mHandler.postDelayed(this, 300);
-                }else {
+                }else{
                     ArrayList<Word> w = new ArrayList<Word>();
                     w.addAll(mDbHelper.query(key, queryMode, mCatFilter));
                     mWordAdapter = new WordAdapter(KinokoActivity.this, w);
@@ -323,9 +323,9 @@ public class KinokoActivity extends Activity {
      *
      * @return DBHelper.QUERY_*
      */
-    private int getQueryMode() {
-        if(mValSearchOpt.isChecked()) {
-            if(mRefSearchOpt.isChecked()) {
+    private int getQueryMode(){
+        if(mValSearchOpt.isChecked()){
+            if(mRefSearchOpt.isChecked()){
                 return DBHelper.QUERY_REF;
             }
             return DBHelper.QUERY_VAL;
@@ -334,22 +334,22 @@ public class KinokoActivity extends Activity {
     }
 
 
-    private String getValue(AdapterView<?> adapter, int position) {
-        return ((Word)adapter.getItemAtPosition(position)).value;
+    private String getValue(AdapterView<?> adapter, int position){
+        return ((Word) adapter.getItemAtPosition(position)).value;
     }
 
     /**
      * メニュー
      */
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.knk_menu, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
         case R.id.knk_menu_about:
             // Log.v(Constants.TAG,
             // getLocalClassName()+", menu: "+item.getTitle());
@@ -372,12 +372,12 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo){
         super.onCreateContextMenu(menu, v, menuInfo);
 
-        Word w = (Word)mDicList.getItemAtPosition(((AdapterContextMenuInfo)menuInfo).position);
+        Word w = (Word) mDicList.getItemAtPosition(((AdapterContextMenuInfo) menuInfo).position);
 
-        if((w == null) || w.at.length() < 1) {
+        if((w == null) || w.at.length() < 1){
             return;
         }
 
@@ -391,14 +391,14 @@ public class KinokoActivity extends Activity {
 
         char at[] = w.at.toCharArray();
         int len = at.length;
-        for(int i = 0; i < len; i++) {
+        for(int i = 0; i < len; i++){
             // TODO: 萃 -> 萃夢想関連の語句を見る みたいな感じにする?
             menu.add(CMENU_AT, 0, 0, String.valueOf(at[i]));
         }
     }
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    public boolean onContextItemSelected(MenuItem item){
         int id = item.getItemId();
         mKeywordBox.setText("");
         if(id > 0)
@@ -409,7 +409,7 @@ public class KinokoActivity extends Activity {
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig) {
+    public void onConfigurationChanged(Configuration newConfig){
         // TODO 自動生成されたメソッド・スタブ
         super.onConfigurationChanged(newConfig);
         // Log.v(Constants.TAG, "###onConfigChanged.");
@@ -418,15 +418,15 @@ public class KinokoActivity extends Activity {
     /**
      * widgetの初期化
      */
-    private void initWidgets() {
+    private void initWidgets(){
         // Log.v(Constants.TAG, "###initWidget.");
 
-        mDicList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mDicList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
+                                    int position, long id){
                 String result = getValue(parent, position);
-                switch(mLaunchMode) {
+                switch(mLaunchMode){
                 case MODE_MUSHROOM:
                     // Log.d("thKinoko",
                     // parent.getItemAtPosition(position).toString()); // Map
@@ -435,16 +435,15 @@ public class KinokoActivity extends Activity {
                     setResult(RESULT_OK, i);
                     break;
                 case MODE_LAUNCHER:
-                    ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+                    ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                     cm.setText(result);
                     Toast.makeText(KinokoActivity.this,
                             "クリップボードに\"" + result + "\"をコピーしました",
                             Toast.LENGTH_LONG).show();
-                    try {
+                    try{
                         Thread.sleep(500);
-                    }catch(InterruptedException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                    }catch(InterruptedException e){
+                        // nop
                     }
                     break;
                 }
@@ -455,40 +454,39 @@ public class KinokoActivity extends Activity {
 
         registerForContextMenu(mDicList);
 
-        mKeywordBox.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        mKeywordBox.setOnEditorActionListener(new TextView.OnEditorActionListener(){
             @Override
-            public boolean onEditorAction(TextView v, int actionId,
-                                          KeyEvent event) {
-                if(event == null || event.getAction() == KeyEvent.ACTION_UP) {
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event){
+                if(event == null || event.getAction() == KeyEvent.ACTION_UP){
                     search(v.getText().toString());
-                    ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE))
                             .hideSoftInputFromWindow(v.getWindowToken(), 0);
                 }
                 return true;
             }
         });
-        mKeywordBox.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        mKeywordBox.setOnFocusChangeListener(new View.OnFocusChangeListener(){
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus) {
-                    ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+            public void onFocusChange(View v, boolean hasFocus){
+                if(! hasFocus){
+                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE))
                             .hideSoftInputFromWindow(
                                     mKeywordBox.getWindowToken(), 0);
                 }
             }
         });
 
-        mSearchButton.setOnClickListener(new View.OnClickListener() {
+        mSearchButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 search(mKeywordBox.getText().toString());
             }
         });
 
-        mSearchOptGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        mSearchOptGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch(checkedId) {
+            public void onCheckedChanged(RadioGroup group, int checkedId){
+                switch(checkedId){
                 case R.id.knk_search_key:
                     mRefSearchOpt.setEnabled(false);
                     break;
@@ -498,34 +496,34 @@ public class KinokoActivity extends Activity {
                 }
             }
         });
-        mRefSearchOpt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        mRefSearchOpt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
+                                         boolean isChecked){
 
             }
         });
 
         final AlertDialog catDialog = createDialogBuilderCompat()
                 .setMultiChoiceItems(R.array.cateories, mCatFilter,
-                        new DialogInterface.OnMultiChoiceClickListener() {
+                        new DialogInterface.OnMultiChoiceClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog,
-                                                int which, boolean isChecked) {
+                                                int which, boolean isChecked){
                                 mCatFilter[which] = isChecked;
                             }
                         })
-                .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                .setOnCancelListener(new DialogInterface.OnCancelListener(){
                     @Override
-                    public void onCancel(DialogInterface dialog) {
+                    public void onCancel(DialogInterface dialog){
                         // Log.d(Constants.TAG, "refresh");
                         refleshSearch();
                     }
                 })
                 .create();
-        mCatButton.setOnClickListener(new View.OnClickListener() {
+        mCatButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 // カテゴリ選択ダイアログ表示
                 // catChooser.show();
                 catDialog.show();
@@ -540,24 +538,24 @@ public class KinokoActivity extends Activity {
      * @param msgResId msg
      * @return タイトルとメッセージを設定したBuilder
      */
-    private AlertDialog.Builder createMessageDialog(int titleResId, int msgResId) {
+    private AlertDialog.Builder createMessageDialog(int titleResId, int msgResId){
         AlertDialog.Builder builder = createDialogBuilderCompat();
-        if(titleResId != 0) {
+        if(titleResId != 0){
             builder.setTitle(titleResId);
         }
-        if(msgResId != 0) {
+        if(msgResId != 0){
             builder.setMessage(msgResId);
         }
         return builder;
     }
 
     private static final Class[] mBuilderConstructorSignature =
-            new Class[] {
+            new Class[]{
                     Context.class, int.class
             };
     private Constructor<AlertDialog.Builder> mBuilderConstructor;
     private Object[] mBuilderConstructorArgs =
-            new Object[] {
+            new Object[]{
                     this, AlertDialog.THEME_TRADITIONAL
             };
     private boolean mBuilderConstructorChecked = false;
@@ -571,35 +569,35 @@ public class KinokoActivity extends Activity {
      *
      * @return true if Constructor is usable.
      */
-    private boolean isHoneyCombBuilderExecutable() {
-        if(mBuilderConstructorChecked) {
-            return (mBuilderConstructor == null)? false: true;
+    private boolean isHoneyCombBuilderExecutable(){
+        if(mBuilderConstructorChecked){
+            return (mBuilderConstructor == null) ? false : true;
         }
 
         boolean b = false;
         mBuilderConstructorChecked = true;
-        try {
+        try{
             Class<AlertDialog.Builder> clazz = AlertDialog.Builder.class;
             mBuilderConstructor = clazz.getConstructor(mBuilderConstructorSignature);
             b = true;
-        }catch(NoSuchMethodException e) {
+        }catch(NoSuchMethodException e){
             mBuilderConstructor = null;
             b = false;
         }
         return b;
     }
 
-    private AlertDialog.Builder createDialogBuilderCompat() {
+    private AlertDialog.Builder createDialogBuilderCompat(){
         AlertDialog.Builder builder;
-        if(isHoneyCombBuilderExecutable()) {
-            try {
+        if(isHoneyCombBuilderExecutable()){
+            try{
                 builder = mBuilderConstructor.newInstance(mBuilderConstructorArgs);
                 // Log.d(Constants.TAG, "use theme builder");
-            }catch(Exception e) {
+            }catch(Exception e){
                 // Log.d(Constants.TAG, "use old builder.");
                 builder = new AlertDialog.Builder(this);
             }
-        }else {
+        }else{
             // Log.d(Constants.TAG, "use old builder.");
             builder = new AlertDialog.Builder(this);
         }
